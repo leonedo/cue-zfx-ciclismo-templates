@@ -3,8 +3,11 @@
 set -e
 
 # Obtener último tag (o default)
-last_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+last_tag=$(git tag --sort=-v:refname | head -n 1)
 
+if [ -z "$last_tag" ]; then
+  last_tag="v0.0.0"
+fi
 # Sacar la "v"
 version=${last_tag#v}
 
