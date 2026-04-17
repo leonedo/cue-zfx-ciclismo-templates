@@ -1,5 +1,17 @@
 # ScoreB1
 
+**For AI control agents** — This file describes the controllable interface of a Lottie animation
+prepared for CasparCG. Use it to understand **what data to send** from a control client.
+Do not use this file to modify the animation itself.
+**Text layers** — send the target text string using the layer\'s CSS class name.
+**Color fill layers** — send a hex color string (e.g. `#FF0000`) to change the fill color.
+**Opacity layers** — send a number from `0` (transparent) to `1` (fully opaque).
+**Image layers** — send a URL or asset reference to swap the displayed image.
+**Markers** — `play` and `stop` control playback; any other marker name can be triggered
+via `invoke` to drive timeline-based animations (e.g. animate-in, animate-out, transitions).
+The path for the animation is the same as for this file with the same name. both JSON and the html that you need to call from the control
+
+
 ## Animation
 
 | Property | Value |
