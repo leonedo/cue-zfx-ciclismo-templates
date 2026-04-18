@@ -12,10 +12,28 @@
       },
       "problemMatcher": []
     },
-     {
+    {
       "label": "Release Macos",
       "type": "shell",
-      "command": "./release.sh"
+      "command": "./release.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Pre-Release Win",
+      "type": "shell",
+      "command": "./release.sh patch pre",
+      "options": {
+        "shell": {
+          "executable": "C:\\Program Files\\Git\\bin\\bash.exe"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Pre-Release Macos",
+      "type": "shell",
+      "command": "./release.sh patch pre",
+      "problemMatcher": []
     }
   ]
 }
