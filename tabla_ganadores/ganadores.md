@@ -79,3 +79,41 @@ The path for the animation is the same as for this file with the same name. both
 | `play` | 0 | 100 | play |
 | `stop` | 440 | 50 | stop |
 | `update` | 221 | 30 | update |
+
+## Payload
+
+Flat JSON object — one key per text layer, string values.
+
+```json
+{
+  "titulo_tabla": "TABLA DE GANADORES",
+  "etapa": "ELITE",
+  "pos1": "1",
+  "nombre1": "APELLIDO NOMBRE",
+  "dato1": "100",
+  "tiempo1": "1:23:45",
+  "pos2": "2",
+  "nombre2": "APELLIDO NOMBRE",
+  "dato2": "85",
+  "tiempo2": "1:24:10"
+}
+```
+
+- `dato` → puntos del corredor
+- `nombre` → formato `APELLIDO NOMBRE` en mayúsculas
+- Repetir el patrón hasta `pos10` / `nombre10` / `dato10` / `tiempo10`
+- Campos sin corredor: enviar `""`
+
+## Workflow
+
+```
+// Entrada (primera vez o al cambiar categoría)
+cg.add(cgLayer, 'zfx-ciclismo/tabla_ganadores/ganadores', payload, true)
+
+// Actualizar datos en vivo (dispara animación de transición)
+cg.update(cgLayer, payload)
+cg.invoke(cgLayer, 'update')
+
+// Salida
+cg.stop(cgLayer)
+```
