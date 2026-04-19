@@ -22,9 +22,7 @@ A control client sends a flat JSON object. Any subset of these keys is valid —
   "titulo1": "(1) LIDERES CARRERA",
   "valor1": "50.9",
   "texto1": "KM TO GO",
-  "tiempo": "11:51 AM",
-  "logo": "<https://... or relative/path/from/web-root>",
-  "logo2": "<https://... or relative/path/from/web-root>"
+  "time": "11:51 AM" // we ignore this one since its manage from the grah js
 }
 ```
 

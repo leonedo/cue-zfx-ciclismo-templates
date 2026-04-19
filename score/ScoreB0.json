@@ -1000,8 +1000,8 @@
       "ddd": 0,
       "ind": 5,
       "ty": 5,
-      "nm": ".tiempo",
-      "cl": "tiempo",
+      "nm": ".time",
+      "cl": "time",
       "parent": 6,
       "sr": 1,
       "ks": {
