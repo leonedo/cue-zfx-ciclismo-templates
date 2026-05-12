@@ -1,4 +1,4 @@
-# peloton_4
+# lower_dato
 
 > **For AI control agents** — This file describes the controllable interface of a Lottie animation
 > prepared for CasparCG. Use it to understand **what data to send** from a control client.
@@ -19,26 +19,8 @@ A control client sends a flat JSON object. Any subset of these keys is valid —
 
 ```json
 {
-  "titulo": " ",
-  "dorsal1": " ",
-  "nombre1": " ",
-  "dato1": " ",
-  "dorsal2": " ",
-  "nombre2": " ",
-  "dato2": " ",
-  "dorsal3": " ",
-  "nombre3": " ",
-  "dato3": " ",
-  "dorsal4": " ",
-  "nombre4": " ",
-  "dato4": " ",
-  "dorsal5": " ",
-  "nombre5": " ",
-  "dato5": " ",
-  "dorsal6": " ",
-  "nombre6": " ",
-  "dato6": " ",
-  "logo": "<https://... or relative/path/from/web-root>"
+  "titulo": "Lance Armstrong",
+  "texto": "Lance Armstrong es una figura icónica del deporte mundial, conocido por su historia de supervivencia y por uno de los escándalos de dopaje más grandes en la historia del ciclismo. A día de hoy se mantiene activo."
 }
 ```
 
@@ -48,42 +30,20 @@ A control client sends a flat JSON object. Any subset of these keys is valid —
 |----------|-------|
 | Size | 1920 × 1080 px |
 | Frame rate | 29.9700012207031 fps |
-| Frames | 0 – 374.000015233332 |
-| Duration | 12.48 s |
+| Frames | 0 – 393.000016007218 |
+| Duration | 13.11 s |
 
 ## Text layers
 
 | Class | nm | Default text |
 |-------|----|-------------|
-| `titulo` | `.titulo` |   |
-| `dorsal1` | `.dorsal1` |   |
-| `nombre1` | `.nombre1` |   |
-| `dato1` | `.dato1` |   |
-| `dorsal2` | `.dorsal2` |   |
-| `nombre2` | `.nombre2` |   |
-| `dato2` | `.dato2` |   |
-| `dorsal3` | `.dorsal3` |   |
-| `nombre3` | `.nombre3` |   |
-| `dato3` | `.dato3` |   |
-| `dorsal4` | `.dorsal4` |   |
-| `nombre4` | `.nombre4` |   |
-| `dato4` | `.dato4` |   |
-| `dorsal5` | `.dorsal5` |   |
-| `nombre5` | `.nombre5` |   |
-| `dato5` | `.dato5` |   |
-| `dorsal6` | `.dorsal6` |   |
-| `nombre6` | `.nombre6` |   |
-| `dato6` | `.dato6` |   |
-
-## Image layers
-
-| Class | nm | Ref ID |
-|-------|----|--------|
-| `logo` | `.logo` | `image_0` |
+| `titulo` | `.titulo` | Lance Armstrong |
+| `texto` | `.texto` | Lance Armstrong es una figura icónica del deporte mundial, conocido por su historia de supervivencia y por uno de los escándalos de dopaje más grandes en la historia del ciclismo. A día de hoy se mantiene activo. |
 
 ## Markers
 
 | Name | Start (tm) | Duration (dr) | Comment |
 |------|-----------|--------------|---------|
-| `play` | 0 | 150 | play |
-| `stop` | 324.000015233332 | 50 | stop |
+| `play` | 0 | 100 | play |
+| `stop` | 343 | 50 | stop |
+| `update` | 100 | 30 | update |
