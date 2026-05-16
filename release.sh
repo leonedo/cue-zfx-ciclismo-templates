@@ -59,6 +59,7 @@ echo "Nueva versión:          $new_version"
 gh release create "$new_version" \
   --title "$new_version" \
   --generate-notes \
+  --target "$(git rev-parse HEAD)" \
   $prerelease_flag
 
 echo "✅ Release creado: $new_version"
