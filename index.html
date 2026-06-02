@@ -36,11 +36,14 @@
 
 
     <!-- Scripts -->
+     <script src="../webcg-framework.umd.js"></script>
     <script>
         let data_file="Posicion_peloton.json";
        //  let audio_inframe = 5;
+       if (location.port === "5500") {
+        document.write('<script src="../webcg-devtools.umd.js"><\/script>');
+    }
     </script>
-    <script src="../webcg-framework.umd.js"></script>
     <script src="../lottie.js"></script>
     <script src="../index.js"></script>
 
